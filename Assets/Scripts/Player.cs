@@ -15,8 +15,8 @@ namespace Player
 
         private void Update()
         {
-            float horizontalInput = Input.GetAxisRaw("Horizontal");
-            _rb2D.velocity = new Vector2(horizontalInput, _rb2D.velocity.y);
+            float move = Input.GetAxisRaw("Horizontal");
+            _rb2D.velocity = new Vector2(move, _rb2D.velocity.y);
         }
     }
 }
